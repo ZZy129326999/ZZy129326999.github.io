@@ -3,7 +3,80 @@
     <id>https://wzxzzy.com</id>
     <title>无尽的博客 • Posts by &#34;slam&#34; category</title>
     <link href="https://wzxzzy.com" />
-    <updated>2021-10-25T09:39:55.000Z</updated>
+    <updated>2021-11-01T02:21:33.000Z</updated>
+    <entry>
+        <id>https://wzxzzy.com/slam/%E8%A7%86%E8%A7%89%E9%87%8C%E7%A8%8B%E8%AE%A1/</id>
+        <title>视觉里程计</title>
+        <link rel="alternate" href="https://wzxzzy.com/slam/%E8%A7%86%E8%A7%89%E9%87%8C%E7%A8%8B%E8%AE%A1/"/>
+        <content type="html">&lt;h1 id=&#34;视觉里程计&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#视觉里程计&#34;&gt;#&lt;/a&gt; 视觉里程计&lt;/h1&gt;
+&lt;p&gt;里程计：&lt;/p&gt;
+&lt;p&gt;视觉里程计：&lt;/p&gt;
+&lt;p&gt;漂移：&lt;/p&gt;
+&lt;p&gt;相机模型：相机能够把三维空间中的信息变成一张二维的照片。描述它的数学模型就是相机模型。其中，针孔模型是最常用，也是最简单的相机模型。&lt;/p&gt;
+&lt;p&gt;特征匹配：&lt;/p&gt;
+&lt;p&gt;描述子：对于每一个特征点，为了说明它与其他点的区别，人们还使用 “描述子”（Descriptor）对它们加以描述。描述子通常是一个向量，含有特征点和周围区域的信息。如果两个特征点的描述子相似，我们就可以认为它们是同一个点。根据特征点和描述子的信息，我们可以计算出两张图像中的匹配点。&lt;/p&gt;
+&lt;p&gt;估计相机运动三种情况：&lt;/p&gt;
+&lt;p&gt;BA：&lt;/p&gt;
+&lt;p&gt;重建：&lt;/p&gt;
+&lt;p&gt;三角化：在 2D-2D 的估计下，利用相机的相对运动变化，来估测两个照片的同一物体的空位置。在原理上，只要我们在空间中的不同位置拍摄到了同一个点，就可以通过照片中的像素位置，来估计这个点在真实空间中的位置。&lt;/p&gt;
+&lt;p&gt;在 SLAM 中，三角化的结果，可以视为一种地图。这样，我们建立了对地图的一种点云描述：即通过大量的空间点，来估计整个地图的样貌。这虽然是一种较粗略的描述，但我们也能看出地图里究竟有些什么东西。在特征点方法中，因为我们只重构特征点的空间位置，这种方法也常常被称为稀疏重构。&lt;/p&gt;
+&lt;p&gt;直接法：&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cubGVpcGhvbmUuY29tL2NhdGVnb3J5L2FpL1FqNnVKaGF5d3BCRDh2ZHEuaHRtbA==&#34;&gt;参考：视觉里程计&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuaXQ2MTAuY29tL2FydGljbGUvMTI4ODA4NDI2MDc4MzE3MzYzMi5odG0=&#34;&gt;参考：视觉里程计 2&lt;/span&gt;&lt;/p&gt;
+</content>
+        <updated>2021-11-01T02:21:33.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://wzxzzy.com/SLAM%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AF%BB/</id>
+        <title>SLAM论文精读</title>
+        <link rel="alternate" href="https://wzxzzy.com/SLAM%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AF%BB/"/>
+        <content type="html">&lt;p&gt;这篇文章整合了本人的论文阅读过程，将涉及理论分析和复现，及代码演示。最后将会对专有名词进行介绍。&lt;/p&gt;
+&lt;h1 id=&#34;slam-具体模型分类&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#slam-具体模型分类&#34;&gt;#&lt;/a&gt; SLAM 具体模型分类：&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;论文 1：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9saW5rLnpoaWh1LmNvbS8/dGFyZ2V0PWh0dHBzJTNBLy93d3cucmVzZWFyY2hnYXRlLm5ldC9wdWJsaWNhdGlvbi8zNDk2MTg3NTdfVmlzdWFsX2FuZF9WaXN1YWwtSW5lcnRpYWxfU0xBTV9TdGF0ZV9vZl90aGVfQXJ0X0NsYXNzaWZpY2F0aW9uX2FuZF9FeHBlcmltZW50YWxfQmVuY2htYXJraW5n&#34;&gt;Visual_and_Visual-Inertial_SLAM_State_of_the_Art_Classification_and_Experimental_Benchmarking&lt;/span&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;这篇论文主题是视觉 SLAM （vSLAM）和视觉惯性 SLAM（viSLAM），在特定环境下使用增强现实的行人移动轨迹，来评估这些 SLAM。同时，这些行人写带手持智能设备，有着 6 个自由度。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;现有的标杆实验：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;分为两个部分，列出了众多论文和标杆实验基准。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;硬件和一般设计选择：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;视觉里程计（VO）：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;里程计：在里程计问题中，我们希望测量一个运动物体的轨迹。这可以通过许多不同的手段来实现。例如，我们在汽车轮胎上安装计数码盘，就可以得到轮胎转动的距离，从而得到汽车的估计。或者，也可以测量汽车的速度、加速度，通过时间积分来计算它的位移。完成这种运动估计的装置（包括硬件和算法）叫做里程计（Odometry）。&lt;/p&gt;
+&lt;p&gt;视觉里程计：&lt;strong&gt;根据拍摄图像估计相机运动&lt;/strong&gt;。主要方式分为特征点法和直接方法。其中，特征点法目前占据主流，能够在噪声较大、相机运动较快时工作，但地图则是稀疏特征点；直接方法不需要提特征，能够建立稠密地图，但存在着计算量大、鲁棒性不好的缺陷。特征点方法也叫&lt;strong&gt;稀疏方法&lt;/strong&gt;，而使用特征点描述的也叫&lt;strong&gt;稠密方法&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;漂移：里程计一个很重要的特性，是它只关心局部时间上的运动，多数时候是指两个时刻间的运动。当我们以某种间隔对时间进行采样时，就可估计运动物体在各时间间隔之内的运动。由于这个估计受噪声影响，先前时刻的估计误差，会累加到后面时间的运动之上，这种现象称为漂移（Drift）。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;先简述了 VO 和 SLAM 的关系和区别， VO 是 SLAM 的一个构件，SLAM 可以理解成是 VO 和闭环检测的整合（刨除建图的功能）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;vSLAM 的硬件介绍：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;单目摄像机&lt;/li&gt;
+&lt;li&gt;双目摄像机&lt;/li&gt;
+&lt;li&gt;RGB-D 摄像机&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;啊&lt;/p&gt;
+</content>
+        <updated>2021-10-31T13:04:45.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://wzxzzy.com/slam/SLAM%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AF%BB/</id>
+        <title>SLAM论文精读</title>
+        <link rel="alternate" href="https://wzxzzy.com/slam/SLAM%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AF%BB/"/>
+        <content type="html">&lt;p&gt;SLAM 具体模型分类：&lt;/p&gt;
+&lt;p&gt;论文：&lt;/p&gt;
+</content>
+        <updated>2021-10-31T13:04:45.000Z</updated>
+    </entry>
     <entry>
         <id>https://wzxzzy.com/slam/SLAM%E5%8D%81%E5%9B%9B%E8%AE%B2%E7%AC%AC1-6%E7%AB%A0%E6%80%BB%E7%BB%93/</id>
         <title>SLAM十四讲第1-6章总结</title>

@@ -5,6 +5,30 @@
     "home_page_url": "https://wzxzzy.com",
     "items": [
         {
+            "id": "https://wzxzzy.com/slam/%E8%A7%86%E8%A7%89%E9%87%8C%E7%A8%8B%E8%AE%A1/",
+            "url": "https://wzxzzy.com/slam/%E8%A7%86%E8%A7%89%E9%87%8C%E7%A8%8B%E8%AE%A1/",
+            "title": "视觉里程计",
+            "date_published": "2021-11-01T02:21:33.000Z",
+            "content_html": "<h1 id=\"视觉里程计\"><a class=\"anchor\" href=\"#视觉里程计\">#</a> 视觉里程计</h1>\n<p>里程计：</p>\n<p>视觉里程计：</p>\n<p>漂移：</p>\n<p>相机模型：相机能够把三维空间中的信息变成一张二维的照片。描述它的数学模型就是相机模型。其中，针孔模型是最常用，也是最简单的相机模型。</p>\n<p>特征匹配：</p>\n<p>描述子：对于每一个特征点，为了说明它与其他点的区别，人们还使用 “描述子”（Descriptor）对它们加以描述。描述子通常是一个向量，含有特征点和周围区域的信息。如果两个特征点的描述子相似，我们就可以认为它们是同一个点。根据特征点和描述子的信息，我们可以计算出两张图像中的匹配点。</p>\n<p>估计相机运动三种情况：</p>\n<p>BA：</p>\n<p>重建：</p>\n<p>三角化：在 2D-2D 的估计下，利用相机的相对运动变化，来估测两个照片的同一物体的空位置。在原理上，只要我们在空间中的不同位置拍摄到了同一个点，就可以通过照片中的像素位置，来估计这个点在真实空间中的位置。</p>\n<p>在 SLAM 中，三角化的结果，可以视为一种地图。这样，我们建立了对地图的一种点云描述：即通过大量的空间点，来估计整个地图的样貌。这虽然是一种较粗略的描述，但我们也能看出地图里究竟有些什么东西。在特征点方法中，因为我们只重构特征点的空间位置，这种方法也常常被称为稀疏重构。</p>\n<p>直接法：</p>\n<p><span class=\"exturl\" data-url=\"aHR0cHM6Ly93d3cubGVpcGhvbmUuY29tL2NhdGVnb3J5L2FpL1FqNnVKaGF5d3BCRDh2ZHEuaHRtbA==\">参考：视觉里程计</span></p>\n<p><span class=\"exturl\" data-url=\"aHR0cHM6Ly93d3cuaXQ2MTAuY29tL2FydGljbGUvMTI4ODA4NDI2MDc4MzE3MzYzMi5odG0=\">参考：视觉里程计 2</span></p>\n",
+            "tags": []
+        },
+        {
+            "id": "https://wzxzzy.com/SLAM%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AF%BB/",
+            "url": "https://wzxzzy.com/SLAM%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AF%BB/",
+            "title": "SLAM论文精读",
+            "date_published": "2021-10-31T13:04:45.000Z",
+            "content_html": "<p>这篇文章整合了本人的论文阅读过程，将涉及理论分析和复现，及代码演示。最后将会对专有名词进行介绍。</p>\n<h1 id=\"slam-具体模型分类\"><a class=\"anchor\" href=\"#slam-具体模型分类\">#</a> SLAM 具体模型分类：</h1>\n<ol>\n<li>论文 1：<span class=\"exturl\" data-url=\"aHR0cHM6Ly9saW5rLnpoaWh1LmNvbS8/dGFyZ2V0PWh0dHBzJTNBLy93d3cucmVzZWFyY2hnYXRlLm5ldC9wdWJsaWNhdGlvbi8zNDk2MTg3NTdfVmlzdWFsX2FuZF9WaXN1YWwtSW5lcnRpYWxfU0xBTV9TdGF0ZV9vZl90aGVfQXJ0X0NsYXNzaWZpY2F0aW9uX2FuZF9FeHBlcmltZW50YWxfQmVuY2htYXJraW5n\">Visual_and_Visual-Inertial_SLAM_State_of_the_Art_Classification_and_Experimental_Benchmarking</span></li>\n</ol>\n<ul>\n<li>这篇论文主题是视觉 SLAM （vSLAM）和视觉惯性 SLAM（viSLAM），在特定环境下使用增强现实的行人移动轨迹，来评估这些 SLAM。同时，这些行人写带手持智能设备，有着 6 个自由度。</li>\n</ul>\n<p>现有的标杆实验：</p>\n<ul>\n<li>分为两个部分，列出了众多论文和标杆实验基准。</li>\n</ul>\n<p>硬件和一般设计选择：</p>\n<ul>\n<li>\n<p>视觉里程计（VO）：</p>\n<blockquote>\n<p>里程计：在里程计问题中，我们希望测量一个运动物体的轨迹。这可以通过许多不同的手段来实现。例如，我们在汽车轮胎上安装计数码盘，就可以得到轮胎转动的距离，从而得到汽车的估计。或者，也可以测量汽车的速度、加速度，通过时间积分来计算它的位移。完成这种运动估计的装置（包括硬件和算法）叫做里程计（Odometry）。</p>\n<p>视觉里程计：<strong>根据拍摄图像估计相机运动</strong>。主要方式分为特征点法和直接方法。其中，特征点法目前占据主流，能够在噪声较大、相机运动较快时工作，但地图则是稀疏特征点；直接方法不需要提特征，能够建立稠密地图，但存在着计算量大、鲁棒性不好的缺陷。特征点方法也叫<strong>稀疏方法</strong>，而使用特征点描述的也叫<strong>稠密方法</strong>。</p>\n<p>漂移：里程计一个很重要的特性，是它只关心局部时间上的运动，多数时候是指两个时刻间的运动。当我们以某种间隔对时间进行采样时，就可估计运动物体在各时间间隔之内的运动。由于这个估计受噪声影响，先前时刻的估计误差，会累加到后面时间的运动之上，这种现象称为漂移（Drift）。</p>\n</blockquote>\n</li>\n<li>\n<p>先简述了 VO 和 SLAM 的关系和区别， VO 是 SLAM 的一个构件，SLAM 可以理解成是 VO 和闭环检测的整合（刨除建图的功能）。</p>\n</li>\n<li>\n<p>vSLAM 的硬件介绍：</p>\n<ol>\n<li>单目摄像机</li>\n<li>双目摄像机</li>\n<li>RGB-D 摄像机</li>\n</ol>\n</li>\n</ul>\n<p>啊</p>\n",
+            "tags": []
+        },
+        {
+            "id": "https://wzxzzy.com/slam/SLAM%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AF%BB/",
+            "url": "https://wzxzzy.com/slam/SLAM%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AF%BB/",
+            "title": "SLAM论文精读",
+            "date_published": "2021-10-31T13:04:45.000Z",
+            "content_html": "<p>SLAM 具体模型分类：</p>\n<p>论文：</p>\n",
+            "tags": []
+        },
+        {
             "id": "https://wzxzzy.com/slam/SLAM%E5%8D%81%E5%9B%9B%E8%AE%B2%E7%AC%AC1-6%E7%AB%A0%E6%80%BB%E7%BB%93/",
             "url": "https://wzxzzy.com/slam/SLAM%E5%8D%81%E5%9B%9B%E8%AE%B2%E7%AC%AC1-6%E7%AB%A0%E6%80%BB%E7%BB%93/",
             "title": "SLAM十四讲第1-6章总结",
