@@ -1,16 +1,17 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://yoursite.com</id>
-    <title>Hexo</title>
-    <subtitle>subtitle</subtitle>
+    <title>Rye技术博客</title>
+    <subtitle>一个爱编程的银色猿</subtitle>
     <icon>http://yoursite.com/images/favicon.ico</icon>
     <link href="http://yoursite.com" />
     <author>
-      <name>John Doe</name>
+      <name>张之尧</name>
     </author>
     <updated>2022-08-21T13:05:18.857Z</updated>
-    <category term="关键词1" />
-    <category term="关键词2" />
+    <category term="NeRF" />
+    <category term="SLAM" />
+    <category term="算法" />
     <entry>
         <id>http://yoursite.com/hello-world/</id>
         <title>Hello World</title>

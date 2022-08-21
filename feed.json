@@ -1,9 +1,9 @@
 {
     "version": "https://jsonfeed.org/version/1",
-    "title": "Hexo",
-    "subtitle": "subtitle",
+    "title": "Rye技术博客",
+    "subtitle": "一个爱编程的银色猿",
     "icon": "http://yoursite.com/images/favicon.ico",
-    "description": "描述123",
+    "description": "学习三维重建，SLAM，GPU渲染以及各种好玩插件和工具的无聊有志青年。",
     "home_page_url": "http://yoursite.com",
     "items": [
         {

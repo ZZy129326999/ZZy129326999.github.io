@@ -1,19 +1,20 @@
 <?xml version="1.0"?>
 <rss version="2.0">
     <channel>
-        <title>Hexo</title>
-        <subtitle>subtitle</subtitle>
+        <title>Rye技术博客</title>
+        <subtitle>一个爱编程的银色猿</subtitle>
         <icon>http://yoursite.com/images/favicon.ico</icon>
         <link>http://yoursite.com</link>
         <author>
-          <name>John Doe</name>
+          <name>张之尧</name>
         </author>
-        <description>描述123</description>
+        <description>学习三维重建，SLAM，GPU渲染以及各种好玩插件和工具的无聊有志青年。</description>
         <language>zh-CN</language>
         <pubDate>Sun, 21 Aug 2022 21:05:18 +0800</pubDate>
         <lastBuildDate>Sun, 21 Aug 2022 21:05:18 +0800</lastBuildDate>
-        <category term="关键词1" />
-        <category term="关键词2" />
+        <category term="NeRF" />
+        <category term="SLAM" />
+        <category term="算法" />
         <item>
             <guid isPermalink="true">http://yoursite.com/hello-world/</guid>
             <title>Hello World</title>
