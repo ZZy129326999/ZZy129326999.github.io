@@ -8,10 +8,23 @@
     <author>
       <name>张之尧</name>
     </author>
-    <updated>2022-08-21T13:05:18.857Z</updated>
+    <updated>2022-08-22T12:03:23.417Z</updated>
     <category term="NeRF" />
     <category term="SLAM" />
     <category term="算法" />
+    <entry>
+        <id>http://yoursite.com/3drestruction/nerf/megvvi/</id>
+        <title></title>
+        <link rel="alternate" href="http://yoursite.com/3drestruction/nerf/megvvi/"/>
+        <content type="html">&lt;p&gt;categories:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[三维重建，NeRF]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;nerf&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#nerf&#34;&gt;#&lt;/a&gt; NeRF&lt;/h1&gt;
+&lt;p&gt;旷视 3d master&lt;/p&gt;
+</content>
+        <updated>2022-08-22T12:03:23.417Z</updated>
+    </entry>
     <entry>
         <id>http://yoursite.com/hello-world/</id>
         <title>Hello World</title>
