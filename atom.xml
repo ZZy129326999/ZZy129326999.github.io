@@ -16,13 +16,11 @@
         <id>http://yoursite.com/3drestruction/nerf/megvvi/</id>
         <title></title>
         <link rel="alternate" href="http://yoursite.com/3drestruction/nerf/megvvi/"/>
-        <content type="html">&lt;p&gt;categories:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;[三维重建，NeRF]&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;nerf&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#nerf&#34;&gt;#&lt;/a&gt; NeRF&lt;/h1&gt;
+        <content type="html">&lt;h1 id=&#34;nerf&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#nerf&#34;&gt;#&lt;/a&gt; NeRF&lt;/h1&gt;
 &lt;p&gt;旷视 3d master&lt;/p&gt;
 </content>
+        <category term="三维重建" scheme="http://yoursite.com/categories/3drestruction/" />
+        <category term="NeRF" scheme="http://yoursite.com/categories/3drestruction/nerf/" />
         <updated>2022-08-22T12:03:23.417Z</updated>
     </entry>
     <entry>

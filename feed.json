@@ -11,8 +11,11 @@
             "url": "http://yoursite.com/3drestruction/nerf/megvvi/",
             "title": "",
             "date_published": "2022-08-22T12:03:23.417Z",
-            "content_html": "<p>categories:</p>\n<ul>\n<li>[三维重建，NeRF]</li>\n</ul>\n<h1 id=\"nerf\"><a class=\"anchor\" href=\"#nerf\">#</a> NeRF</h1>\n<p>旷视 3d master</p>\n",
-            "tags": []
+            "content_html": "<h1 id=\"nerf\"><a class=\"anchor\" href=\"#nerf\">#</a> NeRF</h1>\n<p>旷视 3d master</p>\n",
+            "tags": [
+                "三维重建",
+                "NeRF"
+            ]
         },
         {
             "id": "http://yoursite.com/hello-world/",
