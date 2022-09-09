@@ -8,10 +8,42 @@
     <author>
       <name>张之尧</name>
     </author>
-    <updated>2022-08-22T12:03:23.417Z</updated>
+    <updated>2022-09-09T09:32:31.998Z</updated>
     <category term="NeRF" />
     <category term="SLAM" />
     <category term="算法" />
+    <entry>
+        <id>http://yoursite.com/algorithm/mathMethod/</id>
+        <title>计算方法</title>
+        <link rel="alternate" href="http://yoursite.com/algorithm/mathMethod/"/>
+        <content type="html">&lt;h1 id=&#34;第一章&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第一章&#34;&gt;#&lt;/a&gt; 第一章&lt;/h1&gt;
+&lt;h2 id=&#34;1-误差来源和分析&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1-误差来源和分析&#34;&gt;#&lt;/a&gt; 1. 误差来源和分析&lt;/h2&gt;
+&lt;h3 id=&#34;1-模型误差数学模型跟实际问题是近似关系所以有误差&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1-模型误差数学模型跟实际问题是近似关系所以有误差&#34;&gt;#&lt;/a&gt; 1. 模型误差：数学模型跟实际问题是近似关系，所以有误差。&lt;/h3&gt;
+&lt;h3 id=&#34;2-观测误差观测数据会有误差&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2-观测误差观测数据会有误差&#34;&gt;#&lt;/a&gt; 2. 观测误差：观测数据会有误差。&lt;/h3&gt;
+&lt;h3 id=&#34;3-截断误差方法误差求解使往往是近似解会有误差&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3-截断误差方法误差求解使往往是近似解会有误差&#34;&gt;#&lt;/a&gt; 3. 截断误差（方法误差）：求解使往往是近似解，会有误差。&lt;/h3&gt;
+&lt;h3 id=&#34;4-舍入误差计算机字长有限需要舍去机器字长之外的数字&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#4-舍入误差计算机字长有限需要舍去机器字长之外的数字&#34;&gt;#&lt;/a&gt; 4. 舍入误差：计算机字长有限，需要舍去机器字长之外的数字。&lt;/h3&gt;
+&lt;p&gt;方法误差：收敛性分析&lt;/p&gt;
+&lt;p&gt;舍入误差：稳定性分析&lt;/p&gt;
+&lt;h2 id=&#34;2-绝对误差相对误差有效数字&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2-绝对误差相对误差有效数字&#34;&gt;#&lt;/a&gt; 2. 绝对误差，相对误差，有效数字&lt;/h2&gt;
+&lt;h3 id=&#34;21-绝对误差限&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#21-绝对误差限&#34;&gt;#&lt;/a&gt; 2.1 绝对误差限&lt;/h3&gt;
+&lt;p&gt;$ x^* $ 是精确解，$ \varepsilon $ 绝对误差界， 满足 $ x - x^* = e, e 是误差， |e| &amp;lt;= \varepsilon $ 。&lt;/p&gt;
+&lt;h3 id=&#34;22-相对误差限&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#22-相对误差限&#34;&gt;#&lt;/a&gt; 2.2 相对误差限&lt;/h3&gt;
+&lt;p&gt;由于只有绝对误差限， 相对误差限才被提出来描述误差的可接受程度。&lt;/p&gt;
+&lt;p&gt;$ e_r = \frac &lt;ruby&gt;e&lt;rt&gt;●&lt;/rt&gt;}&lt;rt&gt;●&lt;/rt&gt; &lt;rt&gt;●&lt;/rt&gt;{&lt;rt&gt;●&lt;/rt&gt;x&lt;rt&gt;●&lt;/rt&gt;&lt;/ruby&gt; = \frac &lt;ruby&gt;x&lt;rt&gt;●&lt;/rt&gt; &lt;rt&gt;●&lt;/rt&gt;-&lt;rt&gt;●&lt;/rt&gt; &lt;rt&gt;●&lt;/rt&gt;x&lt;rt&gt;●&lt;/rt&gt;&lt;/ruby&gt;  &lt;ruby&gt;x&lt;rt&gt;●&lt;/rt&gt;&lt;/ruby&gt; $&lt;/p&gt;
+&lt;h3 id=&#34;23-有效数字&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#23-有效数字&#34;&gt;#&lt;/a&gt; 2.3 有效数字&lt;/h3&gt;
+&lt;p&gt;凡是有精确值经过四舍五入得到的近似值， 其绝对误差限等于该近似值末数位的半个单位。&lt;/p&gt;
+&lt;h4 id=&#34;例题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#例题&#34;&gt;#&lt;/a&gt; 例题：&lt;/h4&gt;
+&lt;p&gt;&lt;img data-src=&#34;./images/j1.png&#34; alt=&#34;&#34; /&gt;&lt;br /&gt;
+&lt;img data-src=&#34;./images/j2.png&#34; alt=&#34;&#34; /&gt;&lt;br /&gt;
+&lt;img data-src=&#34;./images/j3.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h4 id=&#34;重点&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#重点&#34;&gt;#&lt;/a&gt; 重点：&lt;/h4&gt;
+&lt;p&gt;&lt;img data-src=&#34;./images/j4.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;由这道题可以知道，上边有效数字的定理的作用是在 $ 0.a_1a_2a_3...(a_1!=0)$ 上执行的， 所以 n 是 5 不是 4！！！&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;第二章&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第二章&#34;&gt;#&lt;/a&gt; 第二章&lt;/h1&gt;
+</content>
+        <category term="algorithm" scheme="http://yoursite.com/categories/algorithm/" />
+        <updated>2022-09-09T09:32:31.998Z</updated>
+    </entry>
     <entry>
         <id>http://yoursite.com/3drestruction/nerf/megvvi/</id>
         <title>NeRF入门练习</title>
