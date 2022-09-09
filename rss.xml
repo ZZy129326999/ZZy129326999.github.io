@@ -19,7 +19,7 @@
             <guid isPermalink="true">http://yoursite.com/algorithm/mathMethod/</guid>
             <title>计算方法</title>
             <link>http://yoursite.com/algorithm/mathMethod/</link>
-            <category term="algorithm" scheme="http://yoursite.com/categories/algorithm/" />
+            <category term="竞赛算法" scheme="http://yoursite.com/categories/algorithm/" />
             <pubDate>Fri, 09 Sep 2022 17:32:31 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;第一章&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第一章&#34;&gt;#&lt;/a&gt; 第一章&lt;/h1&gt;
 &lt;h2 id=&#34;1-误差来源和分析&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1-误差来源和分析&#34;&gt;#&lt;/a&gt; 1. 误差来源和分析&lt;/h2&gt;
